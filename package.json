@@ -4,7 +4,7 @@
   "description": "Coding Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "MONGO_HOST=localhost MONGO_USERNAME=root MONGO_PASSWORD=example node index.js",
     "test": "./node_modules/jest/bin/jest.js"
   },
   "license": "BSD-2-Clause",
@@ -12,6 +12,7 @@
     "Faker": "~0.7.0",
     "bluebird": "^3.4.1",
     "jest": "^26.6.3",
-    "lodash": "^4.13.1"
+    "lodash": "^4.13.1",
+    "mongoose": "^5.11.18"
   }
 }
